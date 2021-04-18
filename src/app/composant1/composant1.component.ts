@@ -14,22 +14,21 @@ export class Composant1Component implements OnInit {
 
   ngOnInit(): void {
 
-    if(this.dataList.lenth==0)
-    this.asList=true;
-    else
+    console.log("this.dataList.lenth",this.dataList.length);
+    if(this.dataList.length==0)
     this.asList=false;
+    else
+    this.asList=true;
 
   }
 
-  getColor(data:String) :String
-  {
+  getColor(data:String)
+  {   let couleur='green';
 
     if(data.length%2)
-    
-    return 'red';
-    else
-
-    return  'green';
+    return couleur='red';
+  
+    return  couleur;
 
   }
 
