@@ -1,0 +1,11 @@
+<div *ngIf="asList">
+    <div  id="noData" >  No Data  </div>
+    <div  id="dataList" > liste </div>
+  </div>
+  
+  <div *ngIf="!asList">
+  <div  id="dataList" *ngFor="let item of dataList" > 
+      
+    <div style="color: red;">{{item}}</div>
+</div>
+  </div>
