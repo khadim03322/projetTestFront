@@ -7,15 +7,15 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class Composant1Component implements OnInit {
 
-  @Input() dataList:any=[];
+  @Input() inputData:any=[];
   asList=false;
 
   constructor() { }
 
   ngOnInit(): void {
 
-    console.log("this.dataList.lenth",this.dataList.length);
-    if(this.dataList.length==0)
+    console.log("this.dataList.lenth",this.inputData.length);
+    if(this.inputData.length==0)
     this.asList=false;
     else
     this.asList=true;
